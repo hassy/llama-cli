@@ -4,5 +4,11 @@
   "enableForASGs": [
   ],
   "disableForASGs": [
+  ],
+  "slackWebhook": [
+  	{
+  		"channel": "#random",
+  		"webhookId": "XXXXXXXXX"
+  	}
   ]
 }

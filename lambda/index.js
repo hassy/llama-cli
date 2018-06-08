@@ -12,15 +12,28 @@ exports.handler = function(event, context) {
 console.log('Chaos Llama starting up');
 
 if (llamaConfig.probability) {
-  if (randomIntFromInterval(1,100) >= llamaConfig.probability && llamaConfig.probability != 100) {
+  if (randomIntFromInterval(1,100) > llamaConfig.probability) {
     console.log('Probability says it is not chaos time');
     return context.done(null,null);
   }
 }
 
+let params = {};
+
+if(llamaConfig.stateFilter && llamaConfig.stateFilter.length > 0){
+    params = {
+        Filters: [
+            {
+                Name: 'instance-state-name',
+                Values: llamaConfig.stateFilter
+            },
+        ]
+    };
+}
+
 var ec2 = new AWS.EC2();
 
-ec2.describeInstances(function(err, data) {
+ec2.describeInstances(params, function(err, data) {
   if (err) {
     return context.done(err, null);
   }

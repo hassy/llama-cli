@@ -11,6 +11,10 @@
   		"value": "true"
 	}
   ],
+  "stateFilter":[
+    "pending",
+    "running"
+  ],
   "slackWebhook": [
   	{
   		"channel": "#random",

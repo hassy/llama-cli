@@ -126,12 +126,7 @@ Further reading: [Principles Of Chaos Engineering](http://principlesofchaos.org)
 
 ### Supported AWS Regions
 
-Chaos Lambda will only work in these regions (due to a limitation with AWS Lambda Schedules):
-
-- US East (Northern Virginia)
-- US West (Oregon)
-- Europe (Ireland)
-- Asia Pacific (Tokyo)
+Chaos Lambda will only work in regions that lambda being supported by AWS: [AWS regions for Lambda](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)
 
 ### Features
 

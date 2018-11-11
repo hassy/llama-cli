@@ -126,7 +126,7 @@ Further reading: [Principles Of Chaos Engineering](http://principlesofchaos.org)
 
 ### Supported AWS Regions
 
-Chaos Lambda will only work in regions that lambda being supported by AWS: [refer AWS regions for Lambda] https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
+Chaos Lambda will only work in regions that lambda being supported by AWS: [refer AWS regions for Lambda] (https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)
 
 
 ### Features

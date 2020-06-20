@@ -21,7 +21,7 @@ It will wreak havoc\* on your AWS infrastructure to help you build systems that 
 
 # About
 
-Chaos Lambda is a small tool for testing resiliency and recoverability of AWS-based architectures. Once configured and deployed, it will randomly terminate or otherwise interfere<sup>**[*](#features)**</sup> with the operation of your EC2 instances and ECS tasks. It is inspired by Netflix's [Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey), but instead of requiring an EC2 instance to run on, it uses AWS Lambda. Think of it as Chaos Monkey rebuilt with modern tech.
+Chaos Lambda is a small tool for testing resiliency and recoverability of AWS-based architectures. Once configured and deployed, it will randomly terminate your EC2 instances. It is inspired by Netflix's [Chaos Monkey](https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey), but instead of requiring an EC2 instance to run on, it uses AWS Lambda. Think of it as Chaos Monkey rebuilt with modern tech.
 
 ## Installation
 
@@ -135,7 +135,7 @@ Chaos Lambda will only work in these regions (due to a limitation with AWS Lambd
 
 ### Features
 
-Right now, Chaos Lambda only knows how to terminate instances and does not support more advanced interference modes, like introducing extra latency (but it's on the roadmap and being worked on, see [Issue #4](https://github.com/shoreditch-ops/chaos-lambda/issues/4)).
+Right now, Chaos Lambda only knows how to terminate instances and does not support more advanced interference modes, like introducing extra latency.
 
 ## Bonus Points
 
